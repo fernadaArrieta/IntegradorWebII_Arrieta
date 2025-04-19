@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
+const countryRoutes = require("./routes/countries");
 const PORT = 3000;
 
-app.get("/", (req, res) => {
-  res.send("¡Hola mundo desde Express!");
-});
+app.use(express.json());
+app.use("./routes/countries", countryRoutes);
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
