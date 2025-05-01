@@ -6,7 +6,7 @@ const getCountries = async (req, res) => {
     //console.log(response);
     const countries = response.data.map((country) => ({
       name: country.name.common,
-      capital: country.capital ? country.capital[0] : "No tiene",
+      capital: country.capital,
       bandera: country.flags.png,
       limite: country.borders ? country.borders : 0,
     }));
