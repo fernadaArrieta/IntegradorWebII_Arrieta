@@ -21,6 +21,7 @@ const submitScore = (req, res) => {
     res.status(201).json({ message: "Puntaje guardado exitosamente" });
   });
 };
+
 const getTopScores = async (req, res) => {
   try {
     const [rows] = await db.query(`

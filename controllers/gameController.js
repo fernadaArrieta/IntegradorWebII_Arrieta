@@ -28,20 +28,23 @@ const getQuestion = async (req, res) => {
       questionTypes[Math.floor(Math.random() * questionTypes.length)];
 
     const correct = countries[Math.floor(Math.random() * countries.length)];
-    let pregunta, respuestaCorrecta;
+    let pregunta, respuestaCorrecta, puntaje;
 
     switch (selectedType) {
       case "capital":
         pregunta = `¿Cuál es el país de la siguiente ciudad capital: ${correct.capital}?`;
         respuestaCorrecta = correct.name;
+        puntaje = 3;
         break;
       case "flag":
         pregunta = `¿Qué país está representado por esta bandera?`;
         respuestaCorrecta = correct.name;
+        puntaje = 5;
         break;
       case "borders":
         pregunta = `¿Cuántos países limítrofes tiene ${correct.name}?`;
         respuestaCorrecta = correct.borders.toString();
+        puntaje = 3;
         break;
     }
 
@@ -63,6 +66,7 @@ const getQuestion = async (req, res) => {
       tipoDePregunta: selectedType,
       preguntas: pregunta,
       respuestaCorrecta,
+      puntaje,
       options: options.sort(() => 0.5 - Math.random()),
       flagUrl: selectedType === "flag" ? correct.flag : null,
     });
