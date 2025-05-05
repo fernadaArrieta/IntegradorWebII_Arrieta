@@ -28,24 +28,24 @@ const getQuestion = async (req, res) => {
       questionTypes[Math.floor(Math.random() * questionTypes.length)];
 
     const correct = countries[Math.floor(Math.random() * countries.length)];
-    let question, correctAnswer;
+    let pregunta, respuestaCorrecta;
 
     switch (selectedType) {
       case "capital":
-        question = `¿Cuál es el país de la siguiente ciudad capital: ${correct.capital}?`;
-        correctAnswer = correct.name;
+        pregunta = `¿Cuál es el país de la siguiente ciudad capital: ${correct.capital}?`;
+        respuestaCorrecta = correct.name;
         break;
       case "flag":
-        question = `¿Qué país está representado por esta bandera?`;
-        correctAnswer = correct.name;
+        pregunta = `¿Qué país está representado por esta bandera?`;
+        respuestaCorrecta = correct.name;
         break;
       case "borders":
-        question = `¿Cuántos países limítrofes tiene ${correct.name}?`;
-        correctAnswer = correct.borders.toString();
+        pregunta = `¿Cuántos países limítrofes tiene ${correct.name}?`;
+        respuestaCorrecta = correct.borders.toString();
         break;
     }
 
-    let options = [correctAnswer];
+    let options = [respuestaCorrecta];
     while (options.length < 4) {
       const option =
         selectedType === "borders"
@@ -60,9 +60,9 @@ const getQuestion = async (req, res) => {
     }
 
     res.json({
-      questionType: selectedType,
-      questionText: question,
-      correctAnswer,
+      tipoDePregunta: selectedType,
+      preguntas: pregunta,
+      respuestaCorrecta,
       options: options.sort(() => 0.5 - Math.random()),
       flagUrl: selectedType === "flag" ? correct.flag : null,
     });
