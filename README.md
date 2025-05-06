@@ -27,16 +27,12 @@ Sigue estos sencillos pasos para probar Geo Trivia Challenge:
     cd IntegradorWebII_Arrieta
     ```
 3.  **Instala las dependencias del backend:**
-    ```bash
-    cd backend  # Si tu backend está en una subcarpeta llamada "backend"
-    npm install
-    cd ..      # Vuelve al directorio raíz
+    ```bash   
+    npm install    
     ```
 4.  **Inicia el servidor backend:**
-    ```bash
-    cd backend
-    npm start
-    cd ..
+    ```bash   
+    npm start   
     ```
     (Asegúrate de que tu backend esté corriendo en `http://localhost:3000` por defecto)
 5.  **Abre el archivo `public/index.html` en tu navegador.**
