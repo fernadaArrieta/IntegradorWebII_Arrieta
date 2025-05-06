@@ -46,7 +46,7 @@ const getTopScores = (req, res) => {
 
   const top = scores
     .sort((a, b) => b.score - a.score || a.time - b.time)
-    .slice(0, 10);
+    .slice(0, 20);
 
   res.json(top);
 };

@@ -1,9 +1,182 @@
 [
- 
   {
-    "player_name": "Fer",
+    "player_name": "Carlos",
+    "score": 7,
+    "time": 35.12,
+    "created_at": "2025-05-06T14:01:15.234Z"
+  },
+  {
+    "player_name": "Laura",
+    "score": 12,
+    "time": 58.78,
+    "created_at": "2025-05-06T14:05:42.987Z"
+  },
+  {
+    "player_name": "Pedro",
+    "score": 4,
+    "time": 29.55,
+    "created_at": "2025-05-06T14:08:21.654Z"
+  },
+  {
+    "player_name": "Ana",
+    "score": 9,
+    "time": 41.89,
+    "created_at": "2025-05-06T14:12:59.321Z"
+  },
+  {
+    "player_name": "Sofia",
+    "score": 6,
+    "time": 63.21,
+    "created_at": "2025-05-06T14:16:38.000Z"
+  },
+  {
+    "player_name": "Mateo",
+    "score": 1,
+    "time": 71.45,
+    "created_at": "2025-05-06T14:20:17.678Z"
+  },
+  {
+    "player_name": "Valentina",
+    "score": 15,
+    "time": 52.90,
+    "created_at": "2025-05-06T14:24:56.345Z"
+  },
+  {
+    "player_name": "Lucas",
+    "score": 8,
+    "time": 38.67,
+    "created_at": "2025-05-06T14:28:35.012Z"
+  },
+  {
+    "player_name": "Emilia",
+    "score": 2,
+    "time": 68.11,
+    "created_at": "2025-05-06T14:32:13.679Z"
+  },
+  {
+    "player_name": "Santiago",
+    "score": 11,
+    "time": 47.33,
+    "created_at": "2025-05-06T14:35:52.346Z"
+  },
+  {
+    "player_name": "Martina",
+    "score": 5,
+    "time": 25.99,
+    "created_at": "2025-05-06T14:39:31.013Z"
+  },
+  {
+    "player_name": "Agustín",
+    "score": 13,
+    "time": 60.54,
+    "created_at": "2025-05-06T14:43:09.680Z"
+  },
+  {
+    "player_name": "Isabella",
+    "score": 3,
+    "time": 75.22,
+    "created_at": "2025-05-06T14:46:48.347Z"
+  },
+  {
+    "player_name": "Benjamín",
     "score": 10,
-    "time": 42,
-    "created_at": "2025-05-06T13:36:21.390Z"
+    "time": 31.76,
+    "created_at": "2025-05-06T14:50:27.014Z"
+  },
+  {
+    "player_name": "Camila",
+    "score": 7,
+    "time": 55.01,
+    "created_at": "2025-05-06T14:54:05.681Z"
+  },
+  {
+    "player_name": "Joaquín",
+    "score": 16,
+    "time": 49.29,
+    "created_at": "2025-05-06T14:57:44.348Z"
+  },
+  {
+    "player_name": "Florencia",
+    "score": 4,
+    "time": 22.47,
+    "created_at": "2025-05-06T15:01:23.015Z"
+  },
+  {
+    "player_name": "Thiago",
+    "score": 9,
+    "time": 66.83,
+    "created_at": "2025-05-06T15:05:01.682Z"
+  },
+  {
+    "player_name": "Victoria",
+    "score": 6,
+    "time": 39.15,
+    "created_at": "2025-05-06T15:08:40.349Z"
+  },
+  {
+    "player_name": "Máximo",
+    "score": 1,
+    "time": 72.58,
+    "created_at": "2025-05-06T15:12:19.016Z"
+  },
+  {
+    "player_name": "Julieta",
+    "score": 14,
+    "time": 51.32,
+    "created_at": "2025-05-06T15:15:57.683Z"
+  },
+  {
+    "player_name": "Sebastián",
+    "score": 8,
+    "time": 27.91,
+    "created_at": "2025-05-06T15:19:36.350Z"
+  },
+  {
+    "player_name": "Catalina",
+    "score": 2,
+    "time": 69.44,
+    "created_at": "2025-05-06T15:23:15.017Z"
+  },
+  {
+    "player_name": "Gabriel",
+    "score": 11,
+    "time": 45.77,
+    "created_at": "2025-05-06T15:26:53.684Z"
+  },
+  {
+    "player_name": "Emilia",
+    "score": 5,
+    "time": 33.20,
+    "created_at": "2025-05-06T15:30:32.351Z"
+  },
+  {
+    "player_name": "Santino",
+    "score": 12,
+    "time": 57.03,
+    "created_at": "2025-05-06T15:34:11.018Z"
+  },
+  {
+    "player_name": "Abril",
+    "score": 3,
+    "time": 78.96,
+    "created_at": "2025-05-06T15:37:49.685Z"
+  },
+  {
+    "player_name": "Mateo",
+    "score": 10,
+    "time": 40.59,
+    "created_at": "2025-05-06T15:41:28.352Z"
+  },
+  {
+    "player_name": "Renata",
+    "score": 7,
+    "time": 53.82,
+    "created_at": "2025-05-06T15:45:07.019Z"
+  },
+  {
+    "player_name": "Benicio",
+    "score": 15,
+    "time": 26.34,
+    "created_at": "2025-05-06T15:48:45.686Z"
   }
 ]

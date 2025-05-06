@@ -7,6 +7,7 @@
 body{
   background-image: url('./assets/image/pexels-marina-zasorina-7635010.jpg'); 
   background-size: cover; 
+  color: aliceblue;
 }
 main{
     width: 100%;
@@ -15,4 +16,27 @@ main{
 h1{
     color: aliceblue;
     text-align: center;
+    margin-top: 2rem;
 }
+
+#ranking-section{
+    text-align: center;
+}
+#ranking-list {
+    display: flex;
+    flex-wrap: wrap;     
+    padding: 0; 
+  }
+  
+  #ranking-list li {
+    width: 50%; /* Cada elemento ocupa el 50% del ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el border en el ancho */
+    padding-right: 10px; /* Opcional: espacio entre columnas */
+    margin-bottom: 5px; /* Opcional: espacio entre filas */
+  }
+  
+  /* Opcional: Para alinear los números si no quitaste list-style-type */
+  #ranking-list li::before {
+    display: inline-block;
+    width: 20px; /* Ajusta según necesites */
+  }

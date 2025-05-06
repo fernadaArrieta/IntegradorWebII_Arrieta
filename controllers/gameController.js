@@ -22,7 +22,7 @@ function getRandomElements(array, count) {
 
 const getQuestion = async (req, res) => {
   try {
-    const countries = await getCountriesData();
+    const countries = await getCountriesData(); // Llama a la función local
     const questionTypes = ["capital", "flag", "borders"];
     const selectedType =
       questionTypes[Math.floor(Math.random() * questionTypes.length)];
