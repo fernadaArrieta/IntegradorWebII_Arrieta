@@ -38,7 +38,7 @@
   {
     "player_name": "Valentina",
     "score": 15,
-    "time": 52.90,
+    "time": 52.9,
     "created_at": "2025-05-06T14:24:56.345Z"
   },
   {
@@ -146,7 +146,7 @@
   {
     "player_name": "Emilia",
     "score": 5,
-    "time": 33.20,
+    "time": 33.2,
     "created_at": "2025-05-06T15:30:32.351Z"
   },
   {
@@ -178,5 +178,29 @@
     "score": 15,
     "time": 26.34,
     "created_at": "2025-05-06T15:48:45.686Z"
+  },
+  {
+    "player_name": "Fer",
+    "score": 6,
+    "time": 108.128,
+    "created_at": "2025-05-06T23:25:05.535Z"
+  },
+  {
+    "player_name": "Fer04",
+    "score": 18,
+    "time": 42,
+    "created_at": "2025-05-06T23:28:32.403Z"
+  },
+  {
+    "player_name": "Fer",
+    "score": 3,
+    "time": 39.94,
+    "created_at": "2025-05-06T23:44:10.778Z"
+  },
+  {
+    "player_name": "Teodoro",
+    "score": 6,
+    "time": 54.926,
+    "created_at": "2025-05-06T23:46:50.744Z"
   }
 ]

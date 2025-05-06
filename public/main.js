@@ -1,5 +1,3 @@
-//const API_URL = "http://localhost:3000"; // Ajusta si tu backend corre en otro puerto
-
 let currentQuestion = null;
 let questionIndex = 0;
 const totalQuestions = 10;
@@ -79,8 +77,8 @@ function loadQuestion() {
     optionsContainer.appendChild(button);
   });
 
-  answerFeedback.textContent = "";
-  nextButton.disabled = true;
+  /*  answerFeedback.textContent = "";
+  nextButton.disabled = true; */
 }
 
 async function checkAnswer(selectedOption) {
@@ -112,9 +110,9 @@ async function checkAnswer(selectedOption) {
   scoreDisplay.textContent = score;
   nextButton.disabled = false;
 
-  // Guardar la respuesta en el servidor (asumiendo una ruta /api/answers)
+  /* // Guardar la respuesta en el servidor (asumiendo una ruta /api/answers)
   try {
-    const response = await fetch("/api/game", {
+    const response = await fetch("/api/scores", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -134,7 +132,7 @@ async function checkAnswer(selectedOption) {
     }
   } catch (error) {
     console.error("Error al enviar la respuesta:", error);
-  }
+  } */
 }
 
 function nextQuestion() {
