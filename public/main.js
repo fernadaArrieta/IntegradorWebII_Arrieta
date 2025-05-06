@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000"; // Ajusta si tu backend corre en otro puerto
+//const API_URL = "http://localhost:3000"; // Ajusta si tu backend corre en otro puerto
 
 let currentQuestion = null;
 let questionIndex = 0;
@@ -36,7 +36,7 @@ const playerNameInput = document.getElementById("player-name-input");
 
 async function fetchQuestion() {
   try {
-    const response = await fetch(`${API_URL}/api/game`); // Cambia '/countries' a '/api/game'
+    const response = await fetch("/api/game"); // Cambia '/countries' a '/api/game'
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -114,7 +114,7 @@ async function checkAnswer(selectedOption) {
 
   // Guardar la respuesta en el servidor (asumiendo una ruta /api/answers)
   try {
-    const response = await fetch(`${API_URL}/api/game`, {
+    const response = await fetch("/api/game", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -160,7 +160,7 @@ async function endGame() {
   averageTimeDisplay.textContent = averageTime.toFixed(2);
 
   try {
-    const response = await fetch(`${API_URL}/api/scores`, {
+    const response = await fetch("/api/scores", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -182,7 +182,7 @@ async function endGame() {
 
 async function loadRanking() {
   try {
-    const response = await fetch(`${API_URL}/api/scores/top`);
+    const response = await fetch("/api/scores/top");
     const rankingData = await response.json();
     rankingList.innerHTML = "";
     rankingData.forEach((entry) => {
